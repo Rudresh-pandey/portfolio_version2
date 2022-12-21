@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="about">
+        <p id="hi">
+          hi, I am <br />
+          <a class="travelLinks" href="#contacts"><</a>
+          <a class="travelLinks" href="#projects">></a>
+        </p>
+        <div class="nameimg">
+          <div id="name">
+            <p id="rudresh">RUDRESH PANDEY</p>
+          </div>
+          <img id="myimg" src="images/img.png" alt="" />
+        </div>
+        <p id="mydesc">
+          I am a Computer Application Student, <br />
+          Who Love's to make Projects with Python and JavaScript
+        </p>
+      </div>
+      <div id="projects">
+        <p id="projectList">
+          PROJECTs
+          <a class="travelLinks" href="#about"><</a>
+          <a class="travelLinks" href="#contacts">></a>
+        </p>
+        <div class="lang">
+          <button class="langbtn" id="py">python</button>
+          <button class="langbtn" id="js">JavaScript</button>
+        </div>
+
+        <div class="details" id="py-details" style="display: block">
+          <p>this is python</p>
+          <img src="images/js.jpg" alt="" />
+        </div>
+        <div class="details" id="js-details" style="display: none">
+          <p>this is js</p>
+          <img src="images/js.jpg" alt="" />
+        </div>
+      </div>
+
+      <div id="contacts">
+        <p id="contactList">
+          CONTACTs
+          <a class="travelLinks" href="#projects"><</a>
+          <a class="travelLinks" href="#about">></a>
+        </p>
+        <div class="links">
+          <img
+            class="contact-img"
+            id="linkedinImg"
+            src="images/linkedinicon.png"
+            alt=""
+          />
+          <img
+            class="contact-img"
+            id="githubImg"
+            src="images/github.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
