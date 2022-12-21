@@ -1,0 +1,482 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #140729;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background-color: white;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:white;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to bottom,rgb(95 219 209),#c7aef0);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+a.travelLinks{
+    background:linear-gradient(to bottom,rgb(95 219 209),#d9c5f9);
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    writing-mode: vertical-lr;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 3px 3px;
+}
+
+a.travelLinks:hover{
+    background:linear-gradient(to bottom,rgb(255, 255, 255),#ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+#about{
+    padding: 20px;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    flex: 5;
+}
+
+/* #about{
+    width:300px;
+} */
+
+#hi{
+    background:linear-gradient(to bottom,rgb(95 219 209),#d9c5f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    /* position: absolute; */
+    /* left: -120px;  */
+    font-size: 25px;
+    background-color: #14072900;
+    color: #d9c5f9;
+    font-family: cursive;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+#rudresh{
+    padding: 1px;
+    /* position: absolute; */
+    color: rgb(229, 226, 226);
+    font-size: 42px;
+    font-weight: 800;
+    z-index: 2;
+    writing-mode: vertical-lr;
+    /* left: -125px; */
+    margin-top: 25px;
+    background-color: #14072900;
+    background:linear-gradient(to bottom,rgb(95 219 209),#391377);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* #rudresh{
+    font-size:23px;
+    font-width:700;
+} */
+
+.nameimg{
+    display: flex;
+    margin-left: -10% ;
+    
+}
+
+#myimg{
+    border-radius: 16px;
+    height: 445px;
+    z-index: 1;
+    width: 328px;
+    box-shadow: 0px 0px 10px 5px #3f338530;
+}
+/* #myimg{
+    height:200px;
+    width:150px;
+} */
+#mydesc{
+  margin-top: 60px; 
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+}
+#projects{   
+    display: flex;
+    flex-direction: column;
+    width: 1300px; 
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#projectList{
+    background:linear-gradient(to bottom,rgb(95 219 209),#d9c5f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.lang{
+    display: flex;
+}
+
+#py{
+
+    border-bottom: 2px solid rgb(95 219 209);
+    user-select: none;
+}
+.langbtn{
+    background-color:#39137742;
+    width: 115px;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid #d9c5f9;
+}
+
+.langbtn:hover{
+    background-color:#391377;
+    border-bottom: 2px solid rgb(95 219 209);
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.details{
+    margin-top: 5px;
+    height: 1000px;
+    width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.details p{
+    background-color: transparent;
+    color: black;
+}
+
+.details img{
+    height: 100px;
+    width: 100px;
+}
+
+
+#contacts{   
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+    margin-bottom: 200px;
+}
+
+#contactList{
+    background:linear-gradient(to bottom,rgb(95 219 209),#d9c5f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.links{
+    display: flex;
+    
+    justify-content:space-evenly;
+}
+
+.contact-img{
+    height: 55px;
+    width: 55px;
+    padding: 10px 10px;
+    border-radius: 10%;
+    background: black;
+}
+
+.contact-img:hover{
+    background: #391377;
+    height: 60px;
+    width: 60px;
+    transition: 0.2s;
+}
+
+@media screen and (max-width:475px) {
+    #about{
+        width:300px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:250px;
+        width:180px;
+    }
+    #rudresh{
+        margin-top: 10px;
+        font-size:25px;
+    }
+    #mydesc{
+        margin-top: 50px;
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    #projects{
+        width: 350px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 290px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:350px
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    #about{
+        width:300px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:200px;
+        width:150px;
+    }
+    #rudresh{
+        margin-top: 10px;
+        font-size:25px;
+    }
+    #mydesc{
+        margin-top: 50px;
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    #projects{
+        width: 320px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 270px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:320px
+    }
+    
+}
+
+@media screen and (min-width:476px) and (max-width:650px){
+    #about{
+        width:450px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:315px;
+        width:230px;
+    }
+    #rudresh{
+        margin-top: 11px;
+        font-size:32px;
+    }
+    #mydesc{
+        margin-top: 53px;
+        font-size: 17px;
+        max-width: 320px;
+    }
+
+    #projects{
+        width: 480px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 420px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:450px
+    }
+    
+}
+@media screen and (min-width:650px) and (max-width:810px){
+    #about{
+        width:450px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:315px;
+        width:230px;
+    }
+    #rudresh{
+        margin-top: 11px;
+        font-size:32px;
+    }
+    #mydesc{
+        margin-top: 53px;
+        font-size: 17px;
+        max-width: 320px;
+    }
+
+    #projects{
+        width: 580px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 520px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:450px
+    }
+    
+}
+
+@media screen and (min-width:811px) and (max-width:950px){
+    #about{
+        width:450px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:315px;
+        width:230px;
+    }
+    #rudresh{
+        margin-top: 11px;
+        font-size:32px;
+    }
+    #mydesc{
+        margin-top: 53px;
+        font-size: 17px;
+        max-width: 320px;
+    }
+
+    #projects{
+        width: 750px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 700px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:450px;
+    }
+    
+}
+@media screen and (min-width:951px) and (max-width:1200px){
+    #about{
+        width:450px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:315px;
+        width:230px;
+    }
+    #rudresh{
+        margin-top: 11px;
+        font-size:32px;
+    }
+    #mydesc{
+        margin-top: 53px;
+        font-size: 17px;
+        max-width: 320px;
+    }
+
+    #projects{
+        width: 850px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 750px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:450px
+    }
+    
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px){
+    #about{
+        width:450px;
+    }
+    .nameimg{
+        margin-top: 30px;
+    }
+    #myimg{
+        height:315px;
+        width:230px;
+    }
+    #rudresh{
+        margin-top: 11px;
+        font-size:32px;
+    }
+    #mydesc{
+        margin-top: 53px;
+        font-size: 17px;
+        max-width: 320px;
+    }
+
+    #projects{
+        width: 1000px;
+        margin-top: 100px;
+    }
+    .details{
+        width: 950px;
+        height: 600px;
+    }
+
+    #contacts{
+        width:450px
+    }
+    
+}
